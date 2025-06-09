@@ -2,23 +2,22 @@
 //Alunos: Pedro Miotto Mujica, Thiago Oliveira Dupim, Vinicius Castaman, Gabriel Costa
 //Gerando os gráficos das funções e suas raízes aproximadas
 
-/*
-Fazendo um estudo de sinal no intervalo [-7, +2] ⊂ ℝ obtém-se:
-Como no subintervalo [1; 2] a função muda de sinal, ele é candidato a conter as raízes
- Plotando a função no intervalo [1, 2] marcado em vermelho obtém-se:
-(imagem do grafico)
-que corrobora que as eventuais raízes pertencem aos subintervalos indicados no item 1.)
-(analise derivadas)
-Para mostrar a existência de uma raiz da função f(x) no intervalo [1; 2], aplicamos o Teorema do Valor Intermediário. Primeiro calculamos f(1) = 1² - 3 = -2 e f(2) = 2² - 3 = 1. Como f(1) é negativo e f(2) é positivo, e a função é contínua, pelo teorema existe pelo menos uma raiz nesse intervalo, pois a função muda de sinal (f(1)*f(2) = -2 < 0).
 
-Para verificar se a raiz é única no intervalo [1; 2], analisamos a derivada f'(x) = 3x² - 9. Calculamos f'(1) = -6 e f'(2) = 3. Aqui observamos que f'(1)*f'(2) = -18, que é menor que zero. Isso indica que a derivada muda de sinal no intervalo, o que significa que a função não é estritamente crescente ou decrescente em todo o intervalo. Portanto, não podemos garantir a unicidade da raiz apenas com esse critério. Seria necessário uma análise mais detalhada do comportamento da derivada em todo o intervalo para confirmar se há apenas uma raiz ou possivelmente mais de uma.
-Para o subintervalo [1, 2] obtém-se, via métodos de refinamento, que:
-(imagem print scilab)
-(verifica raiz)
-Como o valor médio das raízes é 1,732051, então f(1,732051) = (1,732051)^2 − 3 = 2,999999 − 3 =
-−1,0 ⋅ 10⁻⁶ ≈ 0, o que mostra que a solução aproximada é suficientemente boa para os mais
-diversos propósitos.
-*/
+//Fazendo um estudo de sinal no intervalo [-7, +2] ⊂ ℝ obtém-se:
+//Como no subintervalo [1; 2] a função muda de sinal, ele é candidato a conter as raízes
+ //Plotando a função no intervalo [1, 2] marcado em vermelho obtém-se:
+//(imagem do grafico)
+//que corrobora que as eventuais raízes pertencem aos subintervalos indicados no item 1.)
+//(analise derivadas)
+//Para mostrar a existência de uma raiz da função f(x) no intervalo [1; 2], aplicamos o Teorema do Valor Intermediário. Primeiro calculamos f(1) = 1² - 3 = -2 e f(2) = 2² - 3 = 1. Como f(1) é negativo e f(2) é positivo, e a função é contínua, pelo teorema existe pelo menos uma raiz nesse intervalo, pois a função muda de sinal (f(1)*f(2) = -2 < 0).
+
+//Para verificar se a raiz é única no intervalo [1; 2], analisamos a derivada f'(x) = 3x² - 9. Calculamos f'(1) = -6 e f'(2) = 3. Aqui observamos que f'(1)*f'(2) = -18, que é menor que zero. Isso indica que a derivada muda de sinal no intervalo, o que significa que a função não é estritamente crescente ou decrescente em todo o intervalo. Portanto, não podemos garantir a unicidade da raiz apenas com esse critério. Seria necessário uma análise mais detalhada do comportamento da derivada em todo o intervalo para confirmar se há apenas uma raiz ou possivelmente mais de uma.
+//Para o subintervalo [1, 2] obtém-se, via métodos de refinamento, que:
+//(imagem print scilab)
+//(verifica raiz)
+//Como o valor médio das raízes é 1,732051, então f(1,732051) = (1,732051)^2 − 3 = 2,999999 − 3 =
+//−1,0 ⋅ 10⁻⁶ ≈ 0, o que mostra que a solução aproximada é suficientemente boa para os mais
+//diversos propósitos.
 
 clear();clc();
 h = 300; F = 0.8; D = 14; C = 1200; //constantes exercicio 2.2
