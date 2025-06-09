@@ -18,6 +18,7 @@ Para o subintervalo [1, 2] obtém-se, via métodos de refinamento, que:
 Como o valor médio das raízes é 1,732051, então f(1,732051) = (1,732051)^2 − 3 = 2,999999 − 3 =
 −1,0 ⋅ 10⁻⁶ ≈ 0, o que mostra que a solução aproximada é suficientemente boa para os mais
 diversos propósitos.
+*/
 
 clear();clc();
 h = 300; F = 0.8; D = 14; C = 1200; //constantes exercicio 2.2
