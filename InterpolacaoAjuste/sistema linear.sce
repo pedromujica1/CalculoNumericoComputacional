@@ -136,9 +136,9 @@ endfunction
 // Durante o ensaio de carregamento de uma estaca, foi registrada a pressão de recalque em diferentes profundidades.
 // Estimar a pressão entre os pontos medidos permite prever o comportamento do solo ao longo do fuste.
 
-//X = [0,1,3,6]
-//Y = [0,95,260,510]
-//PONTOS = [2,4,5]
+X = [0,1,3,6]
+Y = [0,95,260,510]
+PONTOS = [2,4,5]
 
 //estimar com 2metros 
 //ponto = 2;
@@ -147,8 +147,8 @@ endfunction
 //ponto = 4;
 //interpolacao_por_sistema(X, Y, ponto)
 //estimar 5metros
-//ponto = 5;
-//interpolacao_por_sistema(X, Y, ponto)
+ponto = 5;
+interpolacao_por_sistema(X, Y, ponto)
 //gerar gráfico dos pontos
 //interpolacao_por_sistema(X, Y, PONTOS)
 
