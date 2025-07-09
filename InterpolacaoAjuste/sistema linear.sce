@@ -157,7 +157,6 @@ endfunction
 // Deseja-se estimar a temperatura em horários intermediários.
 
 
-
 // Problema 3 — Estimativa de altura d’água em reservatório com falhas de sensores
 // Com sensores em posições fixas, falhas exigem interpolar níveis de água em tempos não medidos.
 
