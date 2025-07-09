@@ -156,15 +156,74 @@ endfunction
 // Monitorar a temperatura do pavimento ao longo do dia é importante para prever cura e segurança.
 // Deseja-se estimar a temperatura em horários intermediários.
 
+//X = [8,10,12,15]
+//Y = [25,36,47,55]
+//PONTOS = [9.5,13,14]
+
+//estimar com 9h30 horas
+//ponto = 9.5;
+//interpolacao_por_sistema(X, Y, ponto)
+//estimar com 13 horas
+//ponto = 13;
+//interpolacao_por_sistema(X, Y, ponto)
+//estimar com 14 horas
+//ponto = 14;
+//interpolacao_por_sistema(X, Y, ponto)
+//gerar gráfico dos pontos
+//interpolacao_por_sistema(X, Y, PONTOS)
 
 // Problema 3 — Estimativa de altura d’água em reservatório com falhas de sensores
 // Com sensores em posições fixas, falhas exigem interpolar níveis de água em tempos não medidos.
 
+//X = [0,5,10,20]
+//Y = [0, 1.4, 2.6, 5.3]
+//PONTOS = [12,17]
+
+//ponto = 12;
+//interpolacao_por_sistema(X, Y, ponto)
+
+//ponto = 17;
+//interpolacao_por_sistema(X, Y, ponto)
+
+//interpolacao_por_sistema(X, Y, PONTOS)
+
 // Problema 4 — Previsão de consumo de memória com aumento do tamanho de entrada
 // Analisar como o consumo de memória cresce com o tamanho da entrada ajuda na alocação dinâmica de recursos.
 
+//X = [100,200,400,800]
+//Y = [30.5,45,70.2,120]
+//PONTOS = [300,600]
+
+//interpolacao_por_sistema(X, Y, ponto)
+//estimar com 300kB
+//ponto = 300;
+//interpolacao_por_sistema(X, Y, ponto)
+
+//ponto = 600;
+//interpolacao_por_sistema(X, Y, ponto)
+
+//gerar gráfico dos pontos
+//interpolacao_por_sistema(X, Y, PONTOS)
+
+
 // Problema 5 — Previsão de tempo de download com base na banda disponível
 // Estimar o tempo de download para velocidades não testadas ajuda no planejamento de desempenho de redes.
+
+//X = [10,20,50,100]
+//Y = [900,450,180,90]
+//PONTOS = [30,75]
+
+//interpolacao_por_sistema(X, Y, ponto)
+//estimar com 300kB
+//ponto = 30;
+//interpolacao_por_sistema(X, Y, ponto)
+
+//ponto = 75;
+//interpolacao_por_sistema(X, Y, ponto)
+
+//gerar gráfico dos pontos
+//interpolacao_por_sistema(X, Y, PONTOS)
+
 
 // Problema 6 — Estimativa do ganho de desempenho em sistemas paralelos
 // A interpolação permite prever o tempo de execução para diferentes números de threads.
