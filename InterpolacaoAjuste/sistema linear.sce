@@ -147,10 +147,10 @@ PONTOS = [2,4,5]
 //ponto = 4;
 //interpolacao_por_sistema(X, Y, ponto)
 //estimar 5metros
-ponto = 5;
-interpolacao_por_sistema(X, Y, ponto)
+//ponto = 5;
+//interpolacao_por_sistema(X, Y, ponto)
 //gerar gráfico dos pontos
-//interpolacao_por_sistema(X, Y, PONTOS)
+interpolacao_por_sistema(X, Y, PONTOS)
 
 // Problema 2 — Análise térmica de pavimento recém-aplicado sob variação solar
 // Monitorar a temperatura do pavimento ao longo do dia é importante para prever cura e segurança.
