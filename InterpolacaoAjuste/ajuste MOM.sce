@@ -76,14 +76,18 @@ endfunction
 // Aplicação importante para entender a cinética de absorção de compostos antifúngicos em videiras.
 
 //TESTANDO COM ORDEM 1
-X = [ 0,1,2,3,4,5,6,7,8,9,10,11,12,13];
-Y = [0.64, 0.64, 0.64, 1.17, 2.31, 3.33, 5.08, 6.06, 7.05, 7.50, 7.78, 7.83, 7.97, 8.00];
+//X = [ 0,1,2,3,4,5,6,7,8,9,10,11,12,13];
+//Y = [0.64, 0.64, 0.64, 1.17, 2.31, 3.33, 5.08, 6.06, 7.05, 7.50, 7.78, 7.83, 7.97, 8.00];
 //ordem = 1;
 //ordem = 2;
 //ajuste_polinomial_mom(X, Y, ordem);
+
 // Problema 12 - Influência do teor de umidade na densidade de biomassa para biodiesel
 // Objetivo: Ajustar modelos polinomiais de 2ª e 3ª ordem aos dados relacionando teor de umidade (base seca) e massa específica.
 // Analisar o grau de não linearidade entre os parâmetros, fundamental para transporte e rendimento na produção de biodiesel.
+
+
+ajuste_polinomial_mom(X, Y, ordem);
 
 // Problema 13 - Simulação térmica da parede de concreto exposta a fonte de calor constante
 // Objetivo: Ajustar modelos polinomiais de 2ª e 3ª ordem para descrever a variação de temperatura no centro de uma parede de concreto ao longo de 7 horas.
