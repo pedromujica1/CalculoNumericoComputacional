@@ -1,4 +1,4 @@
-clc();
+clear(); clc();
 function ajuste_polinomial_mom(X, Y, ordem)
     n = length(X);
     
