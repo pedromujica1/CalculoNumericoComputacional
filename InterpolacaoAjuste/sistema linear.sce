@@ -95,7 +95,7 @@ function plotar_interpolador(X, Y, COEF, PONTOS)
     a.y_label.font_size = 4
 endfunction
 
-function interpolacao_por_sistema(X, Y, ponto)
+function interpolacao_por_sistema(X, Y, PONTOS)
     n = length(X);
     grau_polinomio = n - 1;
 
@@ -121,35 +121,28 @@ function interpolacao_por_sistema(X, Y, ponto)
     printf("\n[4] POLINÔMIO INTERPOLADOR:\n")
     disp(Pol)
 
-    // Avaliação do ponto fornecido
-    valor_real = horner(Pol, ponto);
-    [valor_aprox, erro_percentual] = avaliar_polinomio(Pol, ponto, valor_real);
-    printf("\n[5] VALOR APROXIMADO: p(%.2f) = %.6f\n", ponto, valor_aprox);
-    printf("[6] ERRO PERCENTUAL: %.3f%%\n", erro_percentual);
+    // Avaliação dos pontos fornecidos
+    for i = 1:length(PONTOS)
+        ponto = PONTOS(i);
+        valor_real = horner(Pol, ponto);
+        [valor_aprox, erro_percentual] = avaliar_polinomio(Pol, ponto, valor_real);
+        printf("\n[5] VALOR APROXIMADO: p(%.2f) = %.6f\n", ponto, valor_aprox);
+        printf("[6] ERRO PERCENTUAL: %.3f%%\n", erro_percentual);
+    end
 
-    plotar_interpolador(X, Y, COEF, [ponto]); // vetor com um único ponto para manter compatibilidade
+    // Gráfico com todos os pontos estimados
+    plotar_interpolador(X, Y, COEF, PONTOS);
     printf("\n***** FIM DE INTERPOLAÇÃO POR SISTEMA DE EQUAÇÕES *****\n")
 endfunction
-
 
 // Problema 1 — Estimativa da pressão de recalque em fundações profundas
 // Durante o ensaio de carregamento de uma estaca, foi registrada a pressão de recalque em diferentes profundidades.
 // Estimar a pressão entre os pontos medidos permite prever o comportamento do solo ao longo do fuste.
-
 X = [0,1,3,6]
 Y = [0,95,260,510]
 PONTOS = [2,4,5]
 
-//estimar com 2metros 
-//ponto = 2;
-//interpolacao_por_sistema(X, Y, ponto)
-//estimar com 4metros
-//ponto = 4;
-//interpolacao_por_sistema(X, Y, ponto)
-//estimar 5metros
-//ponto = 5;
-//interpolacao_por_sistema(X, Y, ponto)
-//gerar gráfico dos pontos
+//gerar gráfico dos pontos e estimar os pontos
 interpolacao_por_sistema(X, Y, PONTOS)
 
 // Problema 2 — Análise térmica de pavimento recém-aplicado sob variação solar
