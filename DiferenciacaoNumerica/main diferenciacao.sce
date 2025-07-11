@@ -177,6 +177,61 @@ d4 = 44.334337;
 // Chamada modular
 diferenciacao_numerica_completa(X, Y, k, d1, d2, d3, d4);
 
+// ============================================================
+// PROBLEMA 1 — Estimativa da taxa de transferência de dados
+// em cache de processador
+//
+// Durante testes de benchmark, foram medidos os volumes de dados
+// processados por unidade de tempo em cache L1 de um processador.
+// O objetivo é estimar a taxa instantânea de transferência (MB/ms)
+// em um tempo crítico de 2,0 milissegundos, aplicando técnicas de
+// diferenciação numérica.
+// ============================================================
+
+
+// ============================================================
+// PROBLEMA 2 — Cálculo da taxa de crescimento de usuários
+// simultâneos em sistema web
+//
+// Ao monitorar o comportamento de um sistema web sob carga,
+// registrou-se o número de usuários simultâneos em instantes
+// sucessivos. Deseja-se estimar a taxa de crescimento no instante
+// 4,0 segundos após o início da carga, a fim de avaliar o ponto
+// de inflexão no escalonamento automático do sistema.
+// ============================================================
+
+
+// ============================================================
+// PROBLEMA 3 — Estimativa da variação do tempo de resposta
+// em servidor sob carga crescente
+//
+// Durante um teste de estresse em um servidor de aplicações,
+// o tempo médio de resposta foi registrado conforme a carga de
+// requisições aumentava. Deseja-se estimar a taxa de crescimento
+// do tempo de resposta quando a carga atinge 5,0 mil req/s.
+// ============================================================
+
+
+// ============================================================
+// PROBLEMA 4 — Cálculo da aceleração de uma partícula em
+// simulação computacional
+//
+// Em uma simulação de física computacional, a posição de uma
+// partícula foi registrada ao longo do tempo. Deseja-se calcular
+// numericamente a 2ª derivada da posição (aceleração) no instante
+// t = 2,0 segundos.
+// ============================================================
+
+
+// ============================================================
+// PROBLEMA 5 — Estimativa da variação do uso de CPU em função
+// do número de processos
+//
+// Durante o gerenciamento dinâmico de escalonamento em sistemas
+// operacionais, é importante prever como o uso da CPU se altera
+// com o aumento do número de processos ativos. Deseja-se calcular
+// a 1ª derivada do uso da CPU no ponto de 20 processos ativos.
+// ============================================================
 
 
 
