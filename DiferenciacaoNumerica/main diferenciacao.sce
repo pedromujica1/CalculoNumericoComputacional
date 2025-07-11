@@ -66,7 +66,7 @@ endfunction
 //exec("05-lagrange_1o_caso.sce", -1)
 function Lagrange_1o_Caso(X, Y, k, derivada_1a_exata)
     h1 = abs(X(k) - X(k+1))
-    h2 = abs(X(k+1) - X(k-2))
+    h2 = abs(X(k+1) - X(k+2))
     h = h1 + h2
     derivada_numerica = (-3*Y(k) + 4*Y(k+1) - Y(k+2)) / h
     
@@ -136,9 +136,10 @@ function Erro_Truncamento_C(h, derivada_4a_exata)
 endfunction
 
 function diferenciacao_numerica_completa(X, Y, k, d1, d2, d3, d4)
-    printf("\n***** DIFERENCIAÇÃO NUMÉRICA - VERSÃO MODULAR *****\n")
+    printf("\n***** DIFERENCIAÇÃO NUMÉRICA - MÓDULO COMPLETO *****\n")
+
     printf("\n>> Progressiva de 1a Ordem:")
-    Progressiva_1a_Ordem(X, Y, k, d1, d2)
+    Progressiva_1a_Ordem(X, Y, d1, d2)
 
     printf("\n>> Regressiva de 1a Ordem:")
     Regressiva_1a_Ordem(X, Y, k, d1, d2)
@@ -161,15 +162,22 @@ function diferenciacao_numerica_completa(X, Y, k, d1, d2, d3, d4)
     printf("\n***** FIM DIFERENCIAÇÃO NUMÉRICA *****\n")
 endfunction
 
+///EXEMPLO DE USO NÃO É UM EXERCICIO
+// Dados do problema
 X = [1.8, 1.9, 2.0, 2.1, 2.2];
 Y = [10.889365, 12.703199, 14.778112, 17.148957, 19.855030];
 k = 3;
 
+// Derivadas exatas
 d1 = 22.167168;
 d2 = 29.556224;
 d3 = 36.945270;
 d4 = 44.334337;
 
+// Chamada modular
+diferenciacao_numerica_completa(X, Y, k, d1, d2, d3, d4);
 
-diferenciacao_numerica_completa(X, Y, k, d1, d2, d3, d4)
+
+
+
 
