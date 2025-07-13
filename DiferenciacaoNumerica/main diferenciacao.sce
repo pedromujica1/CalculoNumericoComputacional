@@ -1,5 +1,4 @@
-
-    clear(); clc();
+clear(); clc();
 
 
 //exec("01-progressiva_1a_ordem.sce", -1)
