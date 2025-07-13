@@ -1,4 +1,5 @@
-clear(); clc();
+
+    clear(); clc();
 
 
 //exec("01-progressiva_1a_ordem.sce", -1)
@@ -188,23 +189,21 @@ endfunction
 // diferenciação numérica.
 
 // Dados do problema
-X = [1.6, 1.8, 2.0, 2.2, 2.4];
-Y = [3.244909, 3.583519, 3.953032, 4.356755, 4.798624];
-k = find(X==2.0)
+//X = [1.6, 1.8, 2.0, 2.2, 2.4];
+//Y = [3.244909, 3.583519, 3.953032, 4.356755, 4.798624];
+//k = find(X==2.0)
 
 
 // Derivadas exatas
-d1 = 1.455213;
-d2 = 0.941608;
-d3 = -0.269390;
-d4 = -0.529599;
+//d1 = 1.455213;
+//d2 = 0.941608;
+//d3 = -0.269390;
+//d4 = -0.529599;
 
 // Chamada modular
-diferenciacao_numerica_completa(X, Y, k, d1, d2, d3, d4);
+//diferenciacao_numerica_completa(X, Y, k, d1, d2, d3, d4);
 // ============================================================
 
-
-// ============================================================
 // PROBLEMA 2 — Cálculo da taxa de crescimento de usuários
 // simultâneos em sistema web
 //
@@ -213,10 +212,21 @@ diferenciacao_numerica_completa(X, Y, k, d1, d2, d3, d4);
 // sucessivos. Deseja-se estimar a taxa de crescimento no instante
 // 4,0 segundos após o início da carga, a fim de avaliar o ponto
 // de inflexão no escalonamento automático do sistema.
+
+// Dados do problema
+//X = [3.6, 3.8, 4.0, 4.2, 4.4];
+//Y = [156.071214, 164.706967, 173.831305, 183.496384, 193.761447];
+//k = find(X == 4.0);
+
+//d1 = 28.235294; 
+//d2 = -6.228373; 
+//d3 = 2.540199;  
+//d4 = -1.387914;  
+
+// Chamada modular
+//diferenciacao_numerica_completa(X, Y, k, d1, d2, d3, d4);
 // ============================================================
 
-
-// ============================================================
 // PROBLEMA 3 — Estimativa da variação do tempo de resposta
 // em servidor sob carga crescente
 //
@@ -224,10 +234,23 @@ diferenciacao_numerica_completa(X, Y, k, d1, d2, d3, d4);
 // o tempo médio de resposta foi registrado conforme a carga de
 // requisições aumentava. Deseja-se estimar a taxa de crescimento
 // do tempo de resposta quando a carga atinge 5,0 mil req/s.
-// ============================================================
+
+// Dados do problema
+//X = [4.6, 4.8, 5.0, 5.2, 5.4];
+//Y = [35.777857, 38.285845, 41.000000, 43.967944, 47.240617];
+//k = find(X==5.0)
 
 
+// Derivadas exatas
+//d1 = 11.418310;
+//d2 = 6.794621;
+//d3 = -1.418310;
+//d4 = 0.435778;
+
+// Chamada modular
+//diferenciacao_numerica_completa(X, Y, k, d1, d2, d3, d4);
 // ============================================================
+
 // PROBLEMA 4 — Cálculo da aceleração de uma partícula em
 // simulação computacional
 //
@@ -235,6 +258,19 @@ diferenciacao_numerica_completa(X, Y, k, d1, d2, d3, d4);
 // partícula foi registrada ao longo do tempo. Deseja-se calcular
 // numericamente a 2ª derivada da posição (aceleração) no instante
 // t = 2,0 segundos.
+
+// Dados do problema
+//X = [1.6, 1.8, 2.0, 2.2, 2.4];
+//Y = [0.955512, 1.029619, 1.098612, 1.163151, 1.223775];
+//k = find(X == 2.0);
+
+//d1 = 0.333333; 
+//d2 = -0.111111; 
+//d3 = 0.074074;  
+//d4 = -0.074074;  
+
+// Chamada modular
+//diferenciacao_numerica_completa(X, Y, k, d1, d2, d3, d4);
 // ============================================================
 
 
@@ -246,6 +282,20 @@ diferenciacao_numerica_completa(X, Y, k, d1, d2, d3, d4);
 // operacionais, é importante prever como o uso da CPU se altera
 // com o aumento do número de processos ativos. Deseja-se calcular
 // a 1ª derivada do uso da CPU no ponto de 20 processos ativos.
+
+// Dados do problema
+//X = [16, 18, 20, 22, 24];
+//Y = [57.432743, 63.591787, 70.000000, 76.744138, 83.816777];
+//k = find(X==20)
+
+// Derivadas exatas
+//d1 = 1.095238;
+//d2 = -0.052152;
+//d3 = 0.044967;
+//d4 = -0.000709;
+
+// Chamada modular
+//diferenciacao_numerica_completa(X, Y, k, d1, d2, d3, d4);
 // ============================================================
 
 
