@@ -162,21 +162,6 @@ function diferenciacao_numerica_completa(X, Y, k, d1, d2, d3, d4)
     printf("\n***** FIM DIFERENCIAÇÃO NUMÉRICA *****\n")
 endfunction
 
-///EXEMPLO DE USO NÃO É UM EXERCICIO
-// Dados do problema
-//X = [1.8, 1.9, 2.0, 2.1, 2.2];
-//Y = [10.889365, 12.703199, 14.778112, 17.148957, 19.855030];
-//k = find(X==2)
-
-// Derivadas exatas
-//d1 = 22.167168;
-//d2 = 29.556224;
-//d3 = 36.945270;
-//d4 = 44.334337;
-
-// Chamada modular
-//diferenciacao_numerica_completa(X, Y, k, d1, d2, d3, d4);
-
 // ============================================================
 // PROBLEMA 1 — Estimativa da taxa de transferência de dados
 // em cache de processador
