@@ -140,5 +140,5 @@ endfunction
 //Y = [1,0.44,-0.23,-0.47,-0.24,0.13,0.27]
 //integral_exata = 0.0557713
 //deff('y=f(x)', 'y = exp(-0.2*x)*cos(x)')
-//x0 = 0.0; xn = 6.0; n = 1000]
+//x0 = 0.0; xn = 6.0; n = 1000
 //integracao_completa(X, Y, integral_exata, f, x0, xn, n)
