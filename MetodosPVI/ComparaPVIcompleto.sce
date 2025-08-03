@@ -149,25 +149,32 @@ endfunction
 //a = 0.0; b = 1.0
 //x0 = a; y0 = 50
 //k = 1.5; Tmax = 200
+//h = 0.1
 //h = 0.2
 
 // PROBLEMA 2 DO TRABALHO!!!!!
 //a = 0.0; b = 5.0
 //x0 = a; y0 = 20
+//h = 0.1
 //h = 0.2
 
 // PROBLEMA 3 DO TRABALHO!!!!!
 //a = 0.0; b = 3.0
 //x0 = a; y0 = 0
+//h = 0.1
 //h = 0.2
 
 // PROBLEMA 4 DO TRABALHO!!!!!
 //a = 0.0; b = 10.0
 //x0 = a; y0 = 80
+//h = 0.1
 //h = 0.2
 
 // PROBLEMA 5 DO TRABALHO!!!!!
-// (ainda falta fazer)
+//a = 0.0; b = 3.0
+//x0 = a; y0 = 0
+//h = 0.1
+//h = 0.2
 
 n = int((b - a) / h)
 
@@ -177,7 +184,7 @@ function dy = f(x,y)
     //dy = (50 - y) / 10                   // PROBLEMA 2
     //dy = (5 - y) / 2                     // PROBLEMA 3
     //dy = -0.1*(y - 20)                   // PROBLEMA 4
-    //AINDA NAO TA FEITO                   // PROBLEMA 5
+    //dy = log(x + 1)                      // PROBLEMA 5
 endfunction
 
 function d2y = df(x,y)
@@ -186,7 +193,7 @@ function d2y = df(x,y)
     //d2y = -(1/10) * ((50-y)/10)          // PROBLEMA 2
     //d2y = -(1/2) * ((5-y)/2)             // PROBLEMA 3
     //d2y = -0.1 * (-0.1*(y-20))           // PROBLEMA 4
-    //AINDA NAO TA FEITO                   // PROBLEMA 5
+    //d2y = 1/(x+1)                        // PROBLEMA 5
 endfunction
 
 function yex = y_exata(x)
@@ -195,7 +202,7 @@ function yex = y_exata(x)
     //yex = 50 - 30*exp(-x/10)             // PROBLEMA 2
     //yex = 5 - 5*exp(-x/2)                // PROBLEMA 3
     //yex = 20 + 60*exp(-0.1*x)            // PROBLEMA 4
-    //AINDA NAO TA FEITO                   // PROBLEMA 5
+    //yex = (x + 1) .* log(x + 1) - x      // PROBLEMA 5
 endfunction
 
 compara_pvi(a, b, x0, y0, h, f, df, y_exata, "Problema 3")
