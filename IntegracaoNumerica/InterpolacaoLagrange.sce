@@ -80,9 +80,9 @@ function interpolacao_por_lagrange(X, Y)
 endfunction
 
 // PROBLEMA 1 INTEGRAIS!!!!!
-X = [0,1,2,3,4,5,6]
-Y = [5.04,5.93,12.08,26.01,44.91,70.21,100.87]
-interpolacao_por_lagrange(X, Y)
+//X = [0,1,2,3,4,5,6]
+//Y = [5.04,5.93,12.08,26.01,44.91,70.21,100.87]
+//interpolacao_por_lagrange(X, Y)
 
 // PROBLEMA 2 INTEGRAIS!!!!!
 //X = [0,1,2,3,4,5,6]
@@ -100,7 +100,7 @@ interpolacao_por_lagrange(X, Y)
 //interpolacao_por_lagrange(X, Y)
 
 // PROBLEMA 5 INTEGRAIS!!!!!
-// polinômio não consegue inferir função, propor solução usando mais pontos
+// polinômio não consegue ajustar na função, propor solução usando mais pontos
 //X = [0,1,2,3,4,5,6]
 //Y = [1,0.44,-0.23,-0.47,-0.24,0.13,0.27]
 //interpolacao_por_lagrange(X, Y)
