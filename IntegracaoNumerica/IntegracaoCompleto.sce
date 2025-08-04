@@ -143,3 +143,20 @@ endfunction
 //deff('y=f(x)', 'y = 1 - 0.2073333*x - 0.5322222*x^2 + 0.1904167*x^3 - 0.0080556*x^4 - 0.0030833*x^5 + 0.0002778*x^6')
 //x0 = 0.0; xn = 6.0; n = 1000
 //integracao_completa(X, Y, integral_exata, f, x0, xn, n)
+
+//PROBLEMA 1 DA PROVA 2024-CC!!!!!
+//X = [1.0,1.5,2,2.5,3.0,3.5,4.0,4.5,5.0]
+//Y = [1.8 ,4.1, 7.8, 13, 18.9, 28.0, 37.3, 49.7, 60.0]
+//integral_exata = 96
+//deff('y=f(x)', 'y = 3*x^2 - 3*x + 2')
+//x0 = 1.0; xn = 5.0; n = 1000
+//integracao_completa(X, Y, integral_exata, f, x0, xn, n)
+
+//PROBLEMA 2 DA PROVA 2024-CC!!!!!
+//X = [0, %pi/8, 2*%pi/8, 3*%pi/8, 4*%pi/8, 5*%pi/8, 6*%pi/8, 7*%pi/8, %pi]
+//Y = [1.4114, 1.3615, 1.2247, 1.0707, 1.000, 1.0707, 1.2247, 1.3615 ,1.4114]
+//integral_exata = 3.820197
+//deff('y=f(x)', 'y = sqrt(1+cos(x)^2)')
+//integrate sqrt(1 + cos(x)^2)
+//x0 = 0.0; xn = %pi; n = 1000
+//integracao_completa(X, Y, integral_exata, f, x0, xn, n)

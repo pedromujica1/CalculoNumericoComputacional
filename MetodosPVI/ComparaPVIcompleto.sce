@@ -176,6 +176,12 @@ endfunction
 //h = 0.1
 //h = 0.2
 
+// PPROVA 3 - CNC2024
+a = 0.0; b = 10.0
+x0 = a; y0 = 0
+h = 0.5
+//h = 0.2
+
 n = int((b - a) / h)
 
 function dy = f(x,y)
@@ -185,6 +191,12 @@ function dy = f(x,y)
     //dy = (5 - y) / 2                     // PROBLEMA 3
     //dy = -0.1*(y - 20)                   // PROBLEMA 4
     //dy = log(x + 1)                      // PROBLEMA 5
+    
+    //PROVA 3 - QUESTAO 4
+    // vo/R - q(t) / R*C
+    // (5/100Ohms) -  y / 100*0.01
+    // 0,05−10q
+    dy = 0.05-10*y
 endfunction
 
 function d2y = df(x,y)
@@ -203,6 +215,7 @@ function yex = y_exata(x)
     //yex = 5 - 5*exp(-x/2)                // PROBLEMA 3
     //yex = 20 + 60*exp(-0.1*x)            // PROBLEMA 4
     //yex = (x + 1) .* log(x + 1) - x      // PROBLEMA 5
+    yex = 0.05*(1-exp(-x))
 endfunction
 
-compara_pvi(a, b, x0, y0, h, f, df, y_exata, "Problema 3")
+compara_pvi(a, b, x0, y0, h, f, df, y_exata, "MIOTTINI")
